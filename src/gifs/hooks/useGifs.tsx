@@ -20,6 +20,7 @@ export const useGifs = () => {
 
         const giphys = await getGifsByQuery(term);
         setGifs(giphys);
+        gifsCache.current[term] = giphys;
     }
 
     const handleSearch = async (query: string) => {
