@@ -67,8 +67,6 @@ describe('SearchBar', () => {
         render(<SearchBar onQuery={() => { }} placeholder={value} />);
 
         expect(screen.getByPlaceholderText(value)).toBeDefined();
-
-
     });
 
 });
